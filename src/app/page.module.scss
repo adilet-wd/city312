@@ -1,0 +1,71 @@
+@import "../app/ui/variables/colors.scss";
+@import "../app/ui//variables/breakpoints.scss";
+.carousel-container {
+    position: relative;
+    .main-carousel {
+        width: 100%;
+        height: 316px;
+        @media (max-width: $media-width-lg) {
+            height: 276px;
+        }
+        @media (max-width: $media-width-md) {
+            height: 236px;
+        }
+        @media (max-width: $media-width-sm) {
+            height: 316px;
+        }
+        @media (max-width: 380px) {
+            height: 276px;
+        }
+        .carousel__element {
+            height: calc(100% - 40px);
+            width: auto;
+            margin: 0 15px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @media (max-width: $media-width-sm) {
+                width: calc(100% - 42px);
+            }
+            img {
+                width: auto;
+                height: 100%;
+                object-fit: cover;
+                position: relative;
+                @media (max-width: $media-width-sm) {
+                    width: 100%;
+                    border-radius: 37px;
+                }
+            }
+            .carousel__text {
+                position: absolute;
+                z-index: 2;
+                max-width: calc(100% - 160px);
+                width: 100%;
+                font-size: 28px;
+                font-weight: 700;
+                color: $textColor_white;
+                @media (max-width: $media-width-lg) {
+                    max-width: calc(100% - 130px);
+                    font-size: 24px;
+                }
+                @media (max-width: $media-width-md) {
+                    max-width: calc(100% - 100px);
+                    font-size: 20px;
+                }
+                @media (max-width: $media-width-sm) {
+                    max-width: calc(100% - 80px);
+                    font-size: 25px;
+                }
+                @media (max-width: 380px) {
+                    max-width: calc(100% - 60px);
+                    font-size: 23px;
+                }
+            }
+        }
+        .swiper-pagination-bullet-active {
+            background-color: $backgroundColor_orange;
+        }
+    }
+}
