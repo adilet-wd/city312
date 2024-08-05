@@ -1,13 +1,11 @@
 "use client";
 import Link from "next/link";
-import "./header.module.scss";
+import "./Header.module.scss";
 import Image from "next/image";
 import logoImage from "@/assets/icons/logo-mobile.svg";
 import catalogIcon from "@/assets/icons/catalog_burger.svg";
 import searchIcon from "@/assets/icons/search_icon.svg";
 import myProfileIcon from "@/assets/icons/myProfile_icon.svg";
-import { Container } from "react-bootstrap";
-import { useState, useEffect } from "react";
 
 
 export default function HeaderMobile() {
