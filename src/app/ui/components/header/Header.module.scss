@@ -3,6 +3,9 @@
 .header {
     margin: 31px 0;
     font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     &-top {
         width: 100%;
         height: 63px;
@@ -39,6 +42,7 @@
                 width: 173px;
                 color: $textColor_white;
                 font-weight: 500;
+                font-size: 23px;
             }
         }
 
@@ -73,8 +77,10 @@
                     border-radius: 37px;
                     background-color: transparent;
                     color: $textColor_black;
+                    font-size: 19px;
                     &::placeholder {
                         color: $textColor_black;
+                        font-size: 19px;
                     }
                     &:focus {
                         outline: none;
@@ -83,6 +89,9 @@
                 .search__button {
                     width: 70px;
                     height: calc(100% - 8px);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     border-radius: 37px;
                     border: 0px;
                     background-color: $backgroundColor_orange;
@@ -105,6 +114,33 @@
         
     }
     &-bottom {
-
+        height: 100px;
+        width: 100%;
+        .header__navbar {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            overflow-x: auto;
+            gap: 20px;
+            .navbar__element {
+                a {
+                    color: $textColor_black;
+                    text-decoration: none;
+                    font-size: 21px;
+                    font-weight: 600;
+                    white-space: nowrap;
+                }
+            }
+            .navbar__question {
+                padding: 8px 32px;
+                border-radius: 37px;
+                background-color: $backgroundColor_orange; 
+                a {
+                    color: $textColor_white;
+                } 
+            }
+        }
     }
 }

@@ -1,6 +1,8 @@
 import "@/app/ui/global.scss";
+
 import "../../node_modules/bootstrap/scss/bootstrap.scss";
 import Header from "./ui/components/header/Header";
+
 
 export default function RootLayout({
   children,
@@ -12,7 +14,6 @@ export default function RootLayout({
       <body>
         <Header></Header>
           {children}
-          
         <footer>footer</footer>
       </body>
     </html>

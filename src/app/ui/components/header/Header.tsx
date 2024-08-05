@@ -7,6 +7,7 @@ import searchIcon from "@/assets/icons/search_icon.svg";
 import myProfileIcon from "@/assets/icons/myProfile_icon.svg";
 
 export default function Header() {
+    
   return (
     <>
         <header className="header">
@@ -46,7 +47,7 @@ export default function Header() {
                     <div className="navbar__element">
                         <Link href="/">Для бизнеса</Link>
                     </div>
-                    <div className="navbar__element">
+                    <div className="navbar__element navbar__question">
                         <Link href="/">Q & A</Link>
                     </div>
                 </nav>
