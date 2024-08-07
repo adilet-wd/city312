@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import "./components/header/Header.module.scss";
+@import "../page.module.scss";
 @import "./nullstyle.scss";
+
+
 
 body {
     font-family: "Montserrat", sans-serif;
-  }
+    overflow: auto !important;
+    background-color: #FFFEF9 !important;
+}
