@@ -178,13 +178,12 @@
                         font-size: 16px;
                         font-weight: 600;
                         white-space: nowrap;
-                    }
-    
-                    .navbar__question {
-                        padding: 8px 32px;
                         border-radius: 37px;
-                        background-color: $backgroundColor_orange; 
-                        color: $textColor_white; 
+                        &.active {
+                            padding: 8px 32px;
+                            background-color: $backgroundColor_orange; 
+                            color: $textColor_white; 
+                        }
                     }
                 }
                 
@@ -253,15 +252,26 @@
             flex-direction: column;
             .header__navbar {
                 margin-top: 20px;
-                height: 52px;
+                min-height: 52px;
                 width: 100%;
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
-                overflow-x: auto;
-                overflow-y: hidden;
                 gap: 20px;
                 padding: 10px 0;
+                overflow-y: hidden;
+                overflow-x: auto;
+                &::-webkit-scrollbar {
+                    height: 5px;
+                }                
+                &::-webkit-scrollbar-thumb {
+                    background: $backgroundColor_orange; 
+                    border-radius: 4px;
+                }
+                &::-webkit-scrollbar-track {
+                    background: #f1f1f1;
+                }
+
                 @media (max-width: 380px) {
                     margin-top: 10px;
                 }
@@ -273,14 +283,15 @@
                         font-size: 16px;
                         font-weight: 600;
                         white-space: nowrap;
+                        &.active {
+                            border-radius: 37px;
+                            padding: 8px 32px;
+                            background-color: $backgroundColor_orange; 
+                            color: $textColor_white; 
+                        }
                     }
     
-                    .navbar__question {
-                        padding: 8px 32px;
-                        border-radius: 37px;
-                        background-color: $backgroundColor_orange; 
-                        color: $textColor_white; 
-                    }
+                    
                 }
                 
                 

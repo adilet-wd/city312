@@ -5,6 +5,7 @@ import "../../node_modules/bootstrap/scss/bootstrap.scss";
 import HeaderDesktop from "./ui/components/header/HeaderDesktop";
 import { useState, useEffect } from "react";
 import HeaderMobile from "./ui/components/header/HeaderMobile";
+import Footer from "./ui/components/footer/Footer";
 
 
 export default function RootLayout({
@@ -40,7 +41,7 @@ export default function RootLayout({
         { windowWidth === 0 ? null : null}
         { windowWidth > 768 ? <HeaderDesktop></HeaderDesktop> : <HeaderMobile></HeaderMobile>}
         {children}
-        <footer>footer</footer>
+        <Footer></Footer>
       </body>
     </html>
   );
